@@ -41,11 +41,11 @@ scanf("%f", &pib01);
 printf("Insira numero de turistas:");
 scanf("%f", &turistas01);
 
-
-
-
-
-
+printf("Cidade01: %s  ", cidade01);
+printf("População01: %f  ", populacao01);
+printf("Area01: %f  ", area01);
+printf("Pib01: %f  ", pib01);
+printf("Turistas01: %f  ", turistas01);
 
 
 
