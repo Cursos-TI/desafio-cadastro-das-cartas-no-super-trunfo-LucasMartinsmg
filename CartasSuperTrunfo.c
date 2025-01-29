@@ -18,5 +18,37 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+
+
+printf("                  Desafio tema Países\n");
+
+    char cidade01[20] , cidade02[20] , cidade03[20], cidade04[20] ; 
+    float populacao01 , populacao02 , populacao03 , populacao04 ; 
+    float area01, area02 , area03 , area04 ;
+    double pib01 , pib02, pib03 , pib04 ;
+    float turistas01, turistas02, turustas03, turustas04 ;
+
+// CIDADE01\\\\\\\\\
+printf("Defina nome de cada cidade:\n");
+printf("Cidade01: ");
+scanf("%s", cidade01);
+printf("Insira população01: ");
+scanf("%f", &populacao01);
+printf("Insira tamnho da Area:");
+scanf("%f", &area01);
+printf("Insira PIB cidade01:");
+scanf("%f", &pib01);
+printf("Insira numero de turistas:");
+scanf("%f", &turistas01);
+
+
+
+
+
+
+
+
+
+
     return 0;
 }
