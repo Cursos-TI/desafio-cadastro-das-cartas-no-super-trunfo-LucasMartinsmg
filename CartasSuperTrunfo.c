@@ -29,6 +29,8 @@ printf("                  Desafio tema Países\n\n\n");
     float turistas01, turistas02, turistas03, turistas04 ;
     float densidade_populacional1 , densidade_populacional2 , densidade_populacional3, densidade_populacional4 ;
     float pib_per_capita1 , pib_per_capita2 , pib_per_capita3 , pib_per_capita4 ;
+    int resultado01 , resultado02;
+
 
 
 //PERGUNTAS CIDADE01\\\\\\\\\;
@@ -105,7 +107,7 @@ printf("População02: %.3f  ", populacao02);
 printf("Area02: %.1f  ", area02);
 printf("Pib02: %.3f  ", pib02);
 printf("Turistas02: %.3f ", turistas02);
-densidade_populacional1 = populacao02 / area02 ;
+densidade_populacional2 = populacao02 / area02 ;
 printf("Densidade Populacional de %s é: %f", cidade02 , densidade_populacional2);
 pib_per_capita2 = pib02 / populacao02 ;
 printf ("Pib Per Capita: %f\n\n" , pib_per_capita2);
@@ -116,7 +118,7 @@ printf("População03: %.3f  ", populacao03);
 printf("Area03: %.1f  ", area03);
 printf("Pib03: %.3f  ", pib03);
 printf("Turistas03: %.3f ", turistas03);
-densidade_populacional1 = populacao03 / area03 ;
+densidade_populacional3 = populacao03 / area03 ;
 printf("Densidade Populacional de %s é: %f", cidade03 , densidade_populacional3);
 pib_per_capita3 = pib03 / populacao03 ;
 printf ("Pib Per Capita: %f\n\n" , pib_per_capita3);
@@ -126,10 +128,24 @@ printf("População04: %.3f  ", populacao04);
 printf("Area04: %.1f  ", area04);
 printf("Pib04: %.3f ", pib04);
 printf("Turistas04: %.3f ", turistas04);
-densidade_populacional1 = populacao04 / area04 ;
+densidade_populacional4 = populacao04 / area04 ;
 printf("Densidade Populacional de %s é: %f", cidade04 , densidade_populacional4);
 pib_per_capita4 = pib04 / populacao04 ;
-printf ("Pib Per Capita: %f" , pib_per_capita4);
+printf ("Pib Per Capita: %f\n\n" , pib_per_capita4);
 
-    return 0;
+resultado01 = (int) densidade_populacional1 > densidade_populacional2;
+resultado02 = (int) densidade_populacional3 > densidade_populacional4;
+
+printf("DUELO CIDADES 1 X 2:\n SE A RESPOSTA FOR (1) SINALIZA VITORIA DA CARTA DE %s, SE RESPOSTA FOR (0) %s\n" , cidade01 , cidade02 );
+printf("Densidade Populacional de %s: %.3f \nDensidade populacional %s: %.3f\n", cidade01 , densidade_populacional1, cidade02 , densidade_populacional2 );
+printf("Resultado: %d\n\n", resultado01);
+
+
+printf("DUELO CIDADES 3 X 4:\n SE A RESPOSTA FOR (1) SINALIZA VITORIA DA CARTA DE %s, SE RESPOSTA FOR (0) %s\n" , cidade01 , cidade02 );
+printf("Densidade Populacional de %s: %.3f \nDensidade populacional %s: %.3f\n", cidade03 , densidade_populacional3, cidade04 , densidade_populacional4 );
+printf("Resultado: %d", resultado02);
+
+
+return 0;
+
 }

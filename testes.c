@@ -41,8 +41,10 @@ scanf("%f", &pib01);
 printf("Insira numero de turistas: ");
 scanf("%f", &turistas01);
 
-
-
+printf("cidade2");
+scanf("%s", &cidade02) ;
+printf("pib cidade2");
+scanf("%f", &pib_per_capita2);
 
 //IMPRESSAO DE RESPOSTAS//
 
@@ -54,8 +56,11 @@ printf("Turistas01: %.3f  ", turistas01);
 densidade_populacional1 = populacao01 / area01 ;
 printf("Densidade Populacional de %s é: %.3f  ", cidade01 , densidade_populacional1);
 pib_per_capita1 = pib01 / populacao01 ;
-printf ("Pib Per Capita: %.3f" , pib_per_capita1);
+printf ("Pib Per Capita: %.3f/n" , pib_per_capita1);
 
+printf("Duelo cidade %s, e cidade %s\n\n," , cidade01 , cidade02 );
+
+printf("RESPOSTA É: %f, \n\n" , pib_per_capita1 > pib_per_capita2);
 
     return 0;
 }
